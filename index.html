@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TecnicellPlus - Inicio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Servicio técnico y venta de accesorios para celulares en Chimbote.">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo-tecnicell.png" alt="TecnicellPlus" height="48">
+          <span class="ms-2 fw-bold">TecnicellPlus</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="destination.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonial.html">Opiniones</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          </ul>
+          <a class="btn btn-primary ms-3" href="https://wa.me/51943966262" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Slider -->
+    <section id="hero" class="mb-5">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height:70vh;">
+            <img src="img/carousel-1.jpg" class="d-block w-100" alt="Reparación" style="object-fit:cover; height:70vh;">
+            <div class="carousel-caption d-md-block">
+              <h1 class="display-5 fw-bold">Reparamos tu celular como nuevo</h1>
+              <p>Pantallas, baterías, software y más — Atención rápida en Chimbote.</p>
+              <a class="btn btn-light" href="service.html">Ver servicios</a>
+              <a class="btn btn-outline-light ms-2" href="destination.html">Ver productos</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="height:70vh;">
+            <img src="img/carousel-2.jpg" class="d-block w-100" alt="Accesorios" style="object-fit:cover; height:70vh;">
+            <div class="carousel-caption d-md-block">
+              <h2 class="fw-bold">Accesorios originales y garantizados</h2>
+              <p>Protectores, cargadores, audífonos y más.</p>
+              <a class="btn btn-light" href="destination.html">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section id="services-preview" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Nuestros Servicios</h2>
+          <p class="text-muted">Rápido, confiable y con garantía</p>
+        </div>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="card h-100 text-center p-3">
+              <img src="img/carousel-1.jpg" alt="Cambio de pantalla" class="img-fluid mb-3">
+              <h5>Cambio de pantallas</h5>
+              <p class="small text-muted">Reemplazo con repuestos originales o compatibles.</p>
+              <a href="service.html#pantallas" class="stretched-link">Ver más</a>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card h-100 text-center p-3">
+              <img src="img/service-bateria.jpg" alt="Cambio de batería" class="img-fluid mb-3">
+              <h5>Reemplazo de batería</h5>
+              <p class="small text-muted">Baterías con garantía para tu modelo.</p>
+              <a href="service.html#baterias" class="stretched-link">Ver más</a>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card h-100 text-center p-3">
+              <img src="img/service-software.jpg" alt="Software" class="img-fluid mb-3">
+              <h5>Soporte y software</h5>
+              <p class="small text-muted">Flasheo, liberaciones y eliminación de virus.</p>
+              <a href="service.html#software" class="stretched-link">Ver más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+<section class="featured-products section-padding" id="productos">
+    <div class="container text-center">
+        <h2 class="section-title">Productos Destacados</h2>
+        <p class="section-subtitle">Lo mejor de nuestra tienda, ¡solo para ti!</p>
+
+        <div class="row gy-4 mt-4">
+
+            <!-- Producto 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card shadow-sm p-3 rounded-3">
+                    <img class="img-fluid rounded-3 mb-3" src="assets/img/producto1.jpg" alt="Producto 1">
+                    <h3 class="product-title">Nombre del Producto 1</h3>
+                    <p class="product-price">S/ 99.90</p>
+                    <a href="#" class="btn btn-custom w-100">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card shadow-sm p-3 rounded-3">
+                    <img class="img-fluid rounded-3 mb-3" src="assets/img/producto2.jpg" alt="Producto 2">
+                    <h3 class="product-title">Nombre del Producto 2</h3>
+                    <p class="product-price">S/ 129.90</p>
+                    <a href="#" class="btn btn-custom w-100">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card shadow-sm p-3 rounded-3">
+                    <img class="img-fluid rounded-3 mb-3" src="assets/img/producto3.jpg" alt="Producto 3">
+                    <p class="product-price">S/ 79.90</p>
+                    <a href="#" class="btn btn-custom w-100">Ver más</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Location small -->
+    <section id="where" class="py-5">
+      <div class="container text-center">
+        <h3 class="fw-bold">Visítanos en Chimbote</h3>
+        <p class="text-muted">Av. Francisco Bolognesi 622, Chimbote, Perú</p>
+        <a href="contact.html" class="btn btn-primary">Cómo llegar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>TecnicellPlus</h5>
+          <p class="small">Servicio técnico especializado y venta de accesorios. Dirección: Av. Francisco Bolognesi 622, Chimbote.</p>
+          <p class="small">Tel: 943 966 262</p>
+        </div>
+        <div class="col-md-3">
+          <h6>Enlaces rápidos</h6>
+          <ul class="list-unstyled small">
+            <li><a href="about.html" class="text-light text-decoration-none">Nosotros</a></li>
+            <li><a href="service.html" class="text-light text-decoration-none">Servicios</a></li>
+            <li><a href="destination.html" class="text-light text-decoration-none">Productos</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Síguenos</h6>
+          <a href="https://www.facebook.com/share/1ARpWXbG8m/" target="_blank" class="me-2 text-light"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/tecnicellplus" target="_blank" class="me-2 text-light"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/51943966262" target="_blank" class="text-light"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-3 small">© 2025 TecnicellPlus - Todos los derechos reservados</div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating -->
+  <a href="https://wa.me/51943966262" target="_blank" aria-label="WhatsApp"
+     style="position:fixed;right:18px;bottom:18px;z-index:9999;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:26px;">
+    💬
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
