@@ -58,3 +58,44 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScrollAnimation);
 
 });
+
+
+// =============================================
+// === TECNICELL: Animaciones de scroll (ES) ===
+// =============================================
+// Muestra elementos con clase .fade-up cuando entren al viewport.
+(function(){
+  function handleScrollAnimation(){
+    var items = document.querySelectorAll(".fade-up");
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    for(var i=0;i<items.length;i++){
+      var top = items[i].getBoundingClientRect().top;
+      if(top < h - 100){ items[i].classList.add("show"); }
+    }
+  }
+  window.addEventListener("scroll", handleScrollAnimation);
+  document.addEventListener("DOMContentLoaded", handleScrollAnimation);
+})();
+
+// =============================================
+// === TECNICELL: Botón "Volver arriba" (ES) ===
+// =============================================
+(function(){
+  var btn = document.querySelector(".back-to-top");
+  if(!btn){
+    // Si no existe, lo creamos al vuelo
+    btn = document.createElement("a");
+    btn.href = "#";
+    btn.className = "back-to-top";
+    btn.setAttribute("aria-label","Volver al principio");
+    btn.innerHTML = "↑";
+    document.body.appendChild(btn);
+  }
+  function toggleBtn(){
+    if(window.scrollY > 300){ btn.style.display="block"; }
+    else{ btn.style.display="none"; }
+  }
+  window.addEventListener("scroll", toggleBtn);
+  document.addEventListener("DOMContentLoaded", toggleBtn);
+  btn.addEventListener("click", function(e){ e.preventDefault(); window.scrollTo({top:0, behavior:"smooth"}); });
+})();
