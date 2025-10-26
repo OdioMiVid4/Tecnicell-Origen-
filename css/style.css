@@ -375,3 +375,28 @@ section {
 .btn-custom:hover {
     background: #003cb3;
 }
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.35s;
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1da851;
+  transform: scale(1.07);
+}
+<script src="js/tech.js"></script>
+
