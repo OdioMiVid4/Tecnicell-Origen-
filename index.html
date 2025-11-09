@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <!-- =========================================
-       SEO BÁSICO (ES)
-       - Descripción y palabras clave relevantes para Tecnicell Plus
-       - Autor y metadatos de redes sociales (Open Graph)
-       ========================================= -->
-  <meta name="description" content="Tecnicell Plus: Servicio técnico profesional y venta de accesorios para celulares. Reparaciones rápidas, seguras y con garantía.">
-  <meta name="keywords" content="tecnicell plus, reparación de celulares, accesorios, servicio técnico, smartphones">
-  <meta name="author" content="Tecnicell Plus">
-  <meta property="og:title" content="Tecnicell Plus">
-  <meta property="og:description" content="Reparamos tu celular como nuevo — Tecnicell Plus.">
-  <meta property="og:type" content="website">
-
+<head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TecnicellPlus - Inicio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Servicio técnico y venta de accesorios para celulares en Chimbote.">
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="TecnicellPlus: servicio técnico y accesorios para celulares en Chimbote.">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- HEADER (ES): Encabezado con logotipo y navegación principal -->
-<header>
-    <!-- NAV (ES): Barra de navegación del sitio -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img decoding="async" loading="lazy" src="img/logo-tecnicell.png" alt="TecnicellPlus" height="48">
+          <img src="img/logo-tecnicell.png" alt="TecnicellPlus" height="48">
           <span class="ms-2 fw-bold">TecnicellPlus</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -38,226 +26,443 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="destination.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="testimonial.html">Opiniones</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="producto.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
-          <a class="btn btn-primary ms-3" href="https://wa.me/51943966262" target="_blank">WhatsApp</a>
+          <a class="btn btn-primary ms-3" href="https://wa.me/51943966262" target="_blank">
+            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+          </a>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- MAIN (ES): Contenido principal de la página -->
-<main>
-    <!-- Hero / Slider -->
+  <main>
+    <!-- SLIDER TECNICELLPLUS MODERNO -->
     <section id="hero">
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselTecnicell" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" style="height:70vh;">
-            <img decoding="async" loading="lazy" src="img/carousel-1.jpg" class="d-block w-100" alt="Reparación" style="object-fit:cover; height:70vh;">
-            <div class="carousel-caption d-md-block">
-              <h1 class="display-5 fw-bold">Reparamos tu celular como nuevo</h1>
-              <p>Pantallas, baterías, software y más — Atención rápida en Chimbote.</p>
-              <a class="btn btn-light" href="service.html">Ver servicios</a>
-              <a class="btn btn-outline-light ms-2" href="destination.html">Ver productos</a>
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active position-relative">
+            <img src="img/carousel-1.jpg" class="d-block w-100" alt="Reparación de celulares"
+              style="object-fit:cover; height:90vh;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="fw-bold display-5 mb-3 animate__animated animate__fadeInDown">Reparamos tu celular como nuevo
+              </h1>
+              <p class="lead mb-4 animate__animated animate__fadeInUp">Garantía, repuestos originales y atención
+                inmediata en Chimbote</p>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="servicios.html" class="btn btn-primary px-4 py-2">Ver servicios</a>
+                <a href="producto.html" class="btn btn-outline-light px-4 py-2">Ver productos</a>
+              </div>
             </div>
           </div>
-          <div class="carousel-item" style="height:70vh;">
-            <img decoding="async" loading="lazy" src="img/carousel-2.jpg" class="d-block w-100" alt="Accesorios" style="object-fit:cover; height:70vh;">
-            <div class="carousel-caption d-md-block">
-              <h2 class="fw-bold">Accesorios originales y garantizados</h2>
-              <p>Protectores, cargadores, audífonos y más.</p>
-              <a class="btn btn-light" href="destination.html">Comprar</a>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item position-relative">
+            <img src="img/carousel-2.jpg" class="d-block w-100" alt="Accesorios para celulares"
+              style="object-fit:cover; height:90vh;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="fw-bold display-5 mb-3 animate__animated animate__fadeInDown">Accesorios originales y
+                garantizados</h1>
+              <p class="lead mb-4 animate__animated animate__fadeInUp">Protectores, cargadores y audífonos de alta
+                calidad</p>
+              <a href="producto.html" class="btn btn-light px-4 py-2">Comprar ahora</a>
             </div>
           </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item position-relative">
+            <img src="img/carousel-3.jpg" class="d-block w-100" alt="Soporte técnico profesional"
+              style="object-fit:cover; height:90vh;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="fw-bold display-5 mb-3 animate__animated animate__fadeInDown">Soporte técnico confiable</h1>
+              <p class="lead mb-4 animate__animated animate__fadeInUp">Tu confianza es nuestra mejor herramienta</p>
+              <a href="contacto.html" class="btn btn-primary px-4 py-2">Contáctanos</a>
+            </div>
+          </div>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecnicell" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnicell" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
-      </div>
-    </section>
 
-    <!-- Services preview -->
-    <section id="services-preview">
-      <div class="container">
-        <div class="text-center mb-4">
-          <h2 class="fw-bold">Nuestros Servicios</h2>
-          <p class="text-muted">Rápido, confiable y con garantía</p>
-        </div>
-        <div class="row g-4">
-          <article class="col-md-4">
-            <div class="card h-100 text-center p-3">
-              <img decoding="async" loading="lazy" src="img/carousel-1.jpg" alt="Cambio de pantalla" class="img-fluid mb-3">
-              <h5>Cambio de pantallas</h5>
-              <p class="small text-muted">Reemplazo con repuestos originales o compatibles.</p>
-              <a href="service.html#pantallas" class="stretched-link">Ver más</a>
-            </div>
-          </article>
-          <article class="col-md-4">
-            <div class="card h-100 text-center p-3">
-              <img decoding="async" loading="lazy" src="img/service-bateria.jpg" alt="Cambio de batería" class="img-fluid mb-3">
-              <h5>Reemplazo de batería</h5>
-              <p class="small text-muted">Baterías con garantía para tu modelo.</p>
-              <a href="service.html#baterias" class="stretched-link">Ver más</a>
-            </div>
-          </article>
-          <article class="col-md-4">
-            <div class="card h-100 text-center p-3">
-              <img decoding="async" loading="lazy" src="img/service-software.jpg" alt="Software" class="img-fluid mb-3">
-              <h5>Soporte y software</h5>
-              <p class="small text-muted">Flasheo, liberaciones y eliminación de virus.</p>
-              <a href="service.html#software" class="stretched-link">Ver más</a>
-            </div>
-          </article>
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselTecnicell" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselTecnicell" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselTecnicell" data-bs-slide-to="2"></button>
         </div>
       </div>
     </section>
 
-    
 
-    <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
-<section id="productos">
-    <div class="container text-center">
-        <h2 class="section-title">Productos Destacados</h2>
-        <p class="section-subtitle">Lo mejor de nuestra tienda, ¡solo para ti!</p>
-
-        <div class="row gy-4 mt-4">
-
-            <!-- Producto 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card shadow-sm p-3 rounded-3">
-                    <img decoding="async" loading="lazy" class="img-fluid rounded-3 mb-3" src="assets/img/producto1.jpg" alt="Producto 1">
-                    <h3 class="product-title">Nombre del Producto 1</h3>
-                    <p class="product-price">S/ 99.90</p>
-                    <a href="#" class="btn btn-custom w-100">Ver más</a>
-                </div>
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card shadow-sm p-3 rounded-3">
-                    <img decoding="async" loading="lazy" class="img-fluid rounded-3 mb-3" src="assets/img/producto2.jpg" alt="Producto 2">
-                    <h3 class="product-title">Nombre del Producto 2</h3>
-                    <p class="product-price">S/ 129.90</p>
-                    <a href="#" class="btn btn-custom w-100">Ver más</a>
-                </div>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card shadow-sm p-3 rounded-3">
-                    <img decoding="async" loading="lazy" class="img-fluid rounded-3 mb-3" src="assets/img/producto3.jpg" alt="Producto 3">
-                    <p class="product-price">S/ 79.90</p>
-                    <a href="#" class="btn btn-custom w-100">Ver más</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-    <!-- Location small -->
-    <section id="where">
+    <!-- Servicios -->
+    <section id="servicios" class="py-5">
       <div class="container text-center">
-        <h3 class="fw-bold">Visítanos en Chimbote</h3>
-        <p class="text-muted">Av. Francisco Bolognesi 622, Chimbote, Perú</p>
-        <a href="contact.html" class="btn btn-primary">Cómo llegar</a>
+        <h2 class="fw-bold mb-4">Nuestros Servicios</h2>
+        <div class="row g-4">
+
+          <!-- Servicio 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <img src="img/cambio-pantalla.jpg" class="img-fluid mb-3 rounded" alt="Cambio de Pantalla">
+              <h5>Cambio de Pantallas</h5>
+              <p>Repuestos originales y garantía asegurada.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPantalla">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20información%20sobre%20el%20servicio%20de%20cambio%20de%20pantalla."
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <img src="img/reemplazo-bateria.jpg" class="img-fluid mb-3 rounded" alt="Reemplazo de Batería">
+              <h5>Reemplazo de Batería</h5>
+              <p>Tu equipo volverá a durar como nuevo.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalBateria">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20información%20sobre%20el%20servicio%20de%20reemplazo%20de%20batería."
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <img src="img/soporte-software.jpg" class="img-fluid mb-3 rounded" alt="Soporte y Software">
+              <h5>Soporte y Software</h5>
+              <p>Solución de errores, flasheo y optimización.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSoftware">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20información%20sobre%20el%20servicio%20de%20soporte%20y%20software."
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
+
+    <!-- Modales de Detalle -->
+    <!-- Modal Pantalla -->
+    <div class="modal fade" id="modalPantalla" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Cambio de Pantalla</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/cambio-pantalla.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">
+              Reemplazamos pantallas rotas o dañadas con repuestos originales.
+              Garantía de 3 meses en el servicio y calidad profesional.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20el%20servicio%20de%20cambio%20de%20pantalla."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Batería -->
+    <div class="modal fade" id="modalBateria" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Reemplazo de Batería</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/reemplazo-bateria.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">
+              Instalamos baterías nuevas y originales.
+              Mejor rendimiento, carga estable y prueba de capacidad incluida.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20el%20servicio%20de%20reemplazo%20de%20batería."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Software -->
+    <div class="modal fade" id="modalSoftware" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Soporte y Software</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/soporte-software.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">
+              Solucionamos errores del sistema, actualizaciones,
+              flasheo y optimización completa del equipo.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20el%20servicio%20de%20soporte%20y%20software."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Productos -->
+    <section id="productos" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold">Productos Destacados</h2>
+        <p class="text-muted mb-4">Lo mejor de nuestra tienda, ¡solo para ti!</p>
+        <div class="row gy-4">
+
+          <!-- Producto 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="product-card shadow-sm p-3 rounded-3">
+              <img src="img/case.jpg" class="img-fluid rounded-3 mb-3" alt="Funda Protectora">
+              <h3>Funda Protectora</h3>
+              <p>S/ 45.00</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalFunda">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20comprar%20una%20Funda%20Protectora"
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="product-card shadow-sm p-3 rounded-3">
+              <img src="img/cargador-rapido.jpg" class="img-fluid rounded-3 mb-3" alt="Cargador Rápido">
+              <h3>Cargador Rápido Samsung</h3>
+              <p>S/ 60.00</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCargador">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20comprar%20un%20Cargador%20Rápido%20Samsung"
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="product-card shadow-sm p-3 rounded-3">
+              <img src="img/audifonos.jpg" class="img-fluid rounded-3 mb-3" alt="Audífonos Bluetooth">
+              <h3>Audífonos Bluetooth TWS</h3>
+              <p>S/ 90.00</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAudifonos">
+                  <i class="fa-solid fa-circle-info me-1"></i> Ver detalle
+                </button>
+                <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20comprar%20los%20Audífonos%20Bluetooth"
+                  target="_blank" class="btn btn-success btn-sm">
+                  <i class="fab fa-whatsapp me-1"></i> Consultar
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALES DE PRODUCTOS -->
+    <!-- Modal Funda -->
+    <div class="modal fade" id="modalFunda" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Funda Protectora Antigolpes</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/case.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">
+              Funda resistente con bordes reforzados y acabado antideslizante.
+              Protege tu celular ante caídas y rayones sin perder estilo.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20la%20Funda%20Protectora."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Cargador -->
+    <div class="modal fade" id="modalCargador" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Cargador Samsung 25W Carga Rápida USB-C</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/cargador-rapido.jpg" class="img-fluid rounded mb-3" alt="Cargador Samsung 25W">
+            <p class="text-muted">
+              Cargador original Samsung con salida de 25W y cable USB-C incluido.
+              Ofrece carga rápida y segura con protección contra sobrecalentamiento y sobrecarga.
+            </p>
+            <p class="text-muted small">
+              Producto original con garantía. Compatible con la mayoría de dispositivos Android y USB-C.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20el%20Cargador%20Samsung%2025W."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Audífonos -->
+    <div class="modal fade" id="modalAudifonos" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Audífonos Bluetooth TWS</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/audifonos.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">
+              Sonido envolvente, conexión Bluetooth estable y micrófono integrado.
+              Incluye estuche de carga rápida con batería de larga duración.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola%20TecnicellPlus,%20quiero%20más%20información%20sobre%20los%20Audífonos%20Bluetooth."
+              target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-1"></i> Consultar
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark me-1"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
 
-  <!-- FOOTER (ES): Información de contacto y derechos -->
-<footer class="bg-dark text-light pt-5 pb-3">
+  <!-- FOOTER -->
+  <footer class="footer-custom text-light py-5 mt-auto">
     <div class="container">
+      <div class="row gy-4 text-center text-md-start">
 
-        <div class="row">
-
-            <!-- Logo y descripción -->
-            <div class="col-md-4 mb-4">
-                <h3 class="fw-bold">
-                    <span style="color: var(--secondary);">Tecnicell</span>Plus
-                </h3>
-                <p>
-                    Servicio técnico especializado en reparación de celulares,
-                    accesorios y soluciones tecnológicas.
-                </p>
-            </div>
-
-            <!-- Enlaces rápidos -->
-            <div class="col-md-2 mb-4">
-                <h5 class="fw-semibold mb-3">Enlaces</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#inicio" class="text-light">Inicio</a></li>
-                    <li><a href="#servicios" class="text-light">Servicios</a></li>
-                    <li><a href="#productos" class="text-light">Productos</a></li>
-                    <li><a href="#contacto" class="text-light">Contacto</a></li>
-                </ul>
-            </div>
-
-            <!-- Contacto y Ubicación -->
-            <div class="col-md-3 mb-4">
-                <h5 class="fw-semibold mb-3">Contáctanos</h5>
-                <p>📍 Av. Francisco Bolognesi 622<br>Chimbote, Perú</p>
-                <p>📞 +51 999 999 999</p>
-                <p>✉️ contacto@tecnicellplus.com</p>
-            </div>
-
-            <!-- Redes + WhatsApp flotante -->
-            <div class="col-md-3 mb-4">
-                <h5 class="fw-semibold mb-3">Síguenos</h5>
-                <a href="#" class="me-3 text-light">Facebook</a>
-                <a href="#" class="me-3 text-light">Instagram</a>
-                <a href="#" class="text-light">WhatsApp</a>
-            </div>
-
+        <!-- Columna 1: Información general -->
+        <div class="col-md-4">
+          <h5 class="fw-bold text-uppercase mb-3">TecnicellPlus</h5>
+          <p class="small text-light-50">
+            Servicio técnico y accesorios para celulares.
+            Confianza, rapidez y garantía en cada reparación.
+          </p>
         </div>
 
-        <!-- Google Maps -->
-        <div class="row mt-4" id="contacto">
-            <div class="col-12">
-                <iframe 
-                    src="https://www.google.com/maps?q=Av.+Francisco+Bolognesi+622,+Chimbote,+Peru&output=embed" 
-                    width="100%" 
-                    height="250" 
-                    style="border:0; border-radius:10px;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
+        <!-- Columna 2: Contacto -->
+        <div class="col-md-4">
+          <h6 class="fw-bold text-uppercase mb-3">Contáctanos</h6>
+          <p class="mb-1 small"><i class="fa-solid fa-location-dot me-2"></i>Av. Francisco Bolognesi 622, Chimbote</p>
+          <p class="mb-1 small"><i class="fa-solid fa-phone me-2"></i>+51 943 966 262</p>
+          <p class="small"><i class="fa-solid fa-envelope me-2"></i>contacto@tecnicellplus.com</p>
         </div>
 
-        <hr class="mt-4">
+        <!-- Columna 3: Redes -->
+        <div class="col-md-4 text-md-end text-center">
+          <h6 class="fw-bold text-uppercase mb-3">Síguenos</h6>
+          <div class="mb-3 redes-footer">
+            <a href="https://www.facebook.com/tecnicellplus" target="_blank" title="Facebook" class="text-light mx-2">
+              <i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/tecnicellplus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank" title="Instagram" class="text-light mx-2">
+              <i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://wa.me/51943966262" target="_blank" title="WhatsApp" class="text-light mx-2">
+              <i class="fab fa-whatsapp fa-lg"></i></a>
+          </div>
+          <p class="small text-light-50">Horario: Lun - Sáb 9:00am a 8:00pm</p>
+        </div>
+      </div>
 
-        <p class="text-center mb-0">
-            © 2025 TecnicellPlus — Todos los derechos reservados.
-        </p>
+      <hr class="border-light mt-4">
+      <div class="text-center small text-light-50">
+        © 2025 TecnicellPlus — Todos los derechos reservados.
+      </div>
     </div>
-</footer>
+  </footer>
 
 
-  
-
-  <!-- WhatsApp floating -->
-  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51943966262" target="_blank" class="btn-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous" defer></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="js/main.js" defer></script>
-
-
-  <!-- Botón volver arriba (ES) -->
-  <a href="#" class="back-to-top" aria-label="Volver al principio">↑</a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

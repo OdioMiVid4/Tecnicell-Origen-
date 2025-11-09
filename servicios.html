@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TecnicellPlus - Servicios</title>
+  <meta name="description"
+    content="Reparación de celulares, cambio de pantalla, batería, soporte técnico y más. TecnicellPlus en Chimbote.">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo-tecnicell.png" alt="TecnicellPlus" height="44">
+          <span class="ms-2 fw-bold">TecnicellPlus</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="producto.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <a class="btn btn-primary ms-3" href="https://wa.me/51943966262" target="_blank">
+            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="py-5">
+    <div class="container">
+      <h1 class="fw-bold text-center mb-5">Nuestros Servicios Técnicos</h1>
+      <p class="text-center text-muted mb-5">
+        En <strong>TecnicellPlus</strong> brindamos soluciones rápidas, confiables y con garantía.
+        Trabajamos con repuestos de calidad y técnicos certificados.
+      </p>
+
+      <div class="row g-4">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/cambio-pantalla.jpg" alt="Cambio de pantalla" class="img-fluid rounded mb-3">
+            <h4>Cambio de Pantallas</h4>
+            <p class="text-muted small">Repuestos originales o compatibles, táctil preciso y garantía.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPantalla">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/reemplazo-bateria.jpg" alt="Reemplazo de batería" class="img-fluid rounded mb-3">
+            <h4>Reemplazo de Baterías</h4>
+            <p class="text-muted small">Baterías de alta duración para todo tipo de modelos.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalBateria">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/soporte-software.jpg" alt="Soporte y software" class="img-fluid rounded mb-3">
+            <h4>Soporte y Software</h4>
+            <p class="text-muted small">Flasheo, formateo, optimización y recuperación de sistema.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalSoftware">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/cambio-camara.jpg" alt="Cambio de cámara" class="img-fluid rounded mb-3">
+            <h4>Cambio de Cámaras</h4>
+            <p class="text-muted small">Reemplazo de cámaras frontales y traseras con calidad HD.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalCamara">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/reparacion-humedad.jpg" alt="Reparación por humedad" class="img-fluid rounded mb-3">
+            <h4>Reparación por Humedad</h4>
+            <p class="text-muted small">Rescate de equipos mojados o dañados por líquidos.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalHumedad">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm p-3">
+            <img src="img/reparacion-audio.jpg" alt="Reparación de audio" class="img-fluid rounded mb-3">
+            <h4>Problemas de Audio</h4>
+            <p class="text-muted small">Solución a fallas en parlantes, micrófonos y conectores.</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalAudio">
+              <i class="fa-solid fa-circle-info me-1"></i> Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 🪟 MODALES -->
+  <div id="modales">
+    <!-- Cada modal tiene su imagen, descripción y botón de WhatsApp -->
+    <div class="modal fade" id="modalPantalla" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Cambio de Pantalla</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/cambio-pantalla.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Repuestos originales o compatibles con alta sensibilidad táctil. Garantía de 3 meses y
+              diagnóstico gratuito.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20el%20servicio%20de%20cambio%20de%20pantalla."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalBateria" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Reemplazo de Batería</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/reemplazo-bateria.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Baterías nuevas con control de carga segura y rendimiento óptimo. Incluye calibración
+              y prueba de autonomía.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20el%20reemplazo%20de%20batería."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalSoftware" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Soporte y Software</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/soporte-software.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Actualizaciones, flasheo, liberación, optimización y eliminación de errores del
+              sistema.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20el%20servicio%20de%20software."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCamara" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Cambio de Cámara</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/cambio-camara.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Reemplazo profesional de cámaras frontales y traseras. Enfoque perfecto y resolución
+              original garantizada.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20el%20cambio%20de%20cámara."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalHumedad" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Reparación por Humedad</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/reparacion-humedad.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Limpieza profesional interna, cambio de conectores y restauración de circuitos
+              afectados por agua.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20la%20reparación%20por%20humedad."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAudio" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title w-100">Problemas de Audio</h5>
+          </div>
+          <div class="modal-body">
+            <img src="img/reparacion-audio.jpg" class="img-fluid rounded mb-3" alt="">
+            <p class="text-muted">Reparamos parlantes, micrófonos y conectores dañados. Servicio rápido, limpio y
+              garantizado.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="https://wa.me/51943966262?text=Hola,%20quisiera%20información%20sobre%20la%20reparación%20de%20audio."
+              target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-1"></i> Consultar</a>
+            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-1"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom text-light py-5 mt-auto">
+    <div class="container">
+      <div class="row gy-4 text-center text-md-start">
+        <div class="col-md-4">
+          <h5 class="fw-bold text-uppercase mb-3">TecnicellPlus</h5>
+          <p class="small text-light-50">Servicio técnico y accesorios para celulares. Confianza, rapidez y garantía.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold text-uppercase mb-3">Contáctanos</h6>
+          <p class="mb-1 small"><i class="fa-solid fa-location-dot me-2"></i>Av. Francisco Bolognesi 622, Chimbote</p>
+          <p class="mb-1 small"><i class="fa-solid fa-phone me-2"></i>+51 943 966 262</p>
+          <p class="small"><i class="fa-solid fa-envelope me-2"></i>contacto@tecnicellplus.com</p>
+        </div>
+        <div class="col-md-4 text-md-end text-center">
+          <h6 class="fw-bold text-uppercase mb-3">Síguenos</h6>
+          <div class="mb-3 redes-footer">
+            <a href="https://www.facebook.com/tecnicellplus" target="_blank" class="text-light mx-2"><i
+                class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/tecnicellplus" target="_blank" class="text-light mx-2"><i
+                class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://wa.me/51943966262" target="_blank" class="text-light mx-2"><i
+                class="fab fa-whatsapp fa-lg"></i></a>
+          </div>
+          <p class="small text-light-50">Horario: Lun - Sáb 9:00am a 8:00pm</p>
+        </div>
+      </div>
+      <hr class="border-light mt-4">
+      <div class="text-center small text-light-50">© 2025 TecnicellPlus — Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51943966262" target="_blank" class="btn-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
